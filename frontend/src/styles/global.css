@@ -1,0 +1,68 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles globaux */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles pour le composant TaskModal */
+  .task-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-modal .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task-modal input,
+  .task-modal textarea,
+  .task-modal select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Styles pour le composant Home */
+  .home {
+    padding: 20px;
+  }
+  
+  .home h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles utilitaires */
+  .flex {
+    display: flex;
+  }
+  
+  .text-center {
+    text-align: center;
+  }

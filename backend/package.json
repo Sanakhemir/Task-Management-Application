@@ -1,0 +1,26 @@
+{
+  "name": "mern-backend",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "backend",
+    "express",
+    "node",
+    "js"
+  ],
+  "license": "ISC",
+  "author": "sana",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.9.5"
+  }
+}
