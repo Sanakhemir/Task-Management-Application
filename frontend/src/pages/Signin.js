@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
+
 //Composant Signin : Permet à un utilisateur de se connecter en saisissant son email et son mot de passe
 
 const Signin = () => {

@@ -1,14 +1,14 @@
-import bcrypt from 'bcryptjs'; //comparer les mots de passe chiffrés avec ceux saisis par l'utilisateur
-import jwt from 'jsonwebtoken'; //générer les tokens pour authentifier les utilisateurs après leur connexion.
-import User from '../models/User';
+const bcrypt = require('bcryptjs'); //comparer les mots de passe chiffrés avec ceux saisis par l'utilisateur
+const jwt = require('jsonwebtoken'); //générer les tokens pour authentifier les utilisateurs après leur connexion.
+const User = require('../models/User');
 
-//Créé un nouveau utilisateur 
+//Créé un nouveau utilisateur "Inscription"
 
 const signup = async (req, res) => {
   const { username, email, password } = req.body;   // Extraction des données depuis la requête.
 
   try {
-    const user = new User({ username, email, password });
+    const user = new User({ username, email, password }); //instance 'new'
 
     await user.save();  // Sauvegarde de l'utilisateur dans la base de données
 

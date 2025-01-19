@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import bcrypt from 'bcryptjs';  //Une bibliothèque utilisée pour sécuriser les mots de passe
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');  //Une bibliothèque utilisée pour sécuriser les mots de passe
 
 
 // Définition du schéma pour la collection "User"
@@ -50,7 +50,7 @@ const UserSchema = new mongoose.Schema({
     default: Date.now,
   },
 
-   // Date de suppression logique 
+   // Date de suppression logique   , remplacer par timestamp
 
   deletedAt: {
     type: Date,

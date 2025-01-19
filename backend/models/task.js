@@ -1,5 +1,5 @@
 
-import mongoose from 'mongoose'
+const mongoose = require('mongoose');
 
 
 // Définition du schéma pour la collection "Task"
@@ -59,4 +59,4 @@ import mongoose from 'mongoose'
                 default: null,},   // Par défaut, la tâche n'est pas supprimée (null signifie que la tâche existe encore)
   });
 
-module.exports = mongoose.model('Task', TaskSchema)
+  module.exports = mongoose.model('Task', TaskSchema);

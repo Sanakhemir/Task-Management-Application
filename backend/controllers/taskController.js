@@ -1,4 +1,4 @@
-import Task  from '../models/task';
+const Task = require('../models/task');
 
 //Créer une tâche
 
